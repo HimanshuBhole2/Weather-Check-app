@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/style.css">
+    {{>header_Link}}
+</head>
+<body>
+    
+
+   <div class="conatiner-fluid main-menu">
+    <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                
+                {{>header}}
+                
+                </div>
+    </div>
+</div>
+
+
+<div class="contaitner-fluid">
+
+    <div class="row align-items-center">
+
+        <div>
+
+        </div>
+
+    </div>
+
+</div>   
+
+
+<div class="container-fluid main-header align-items-center">
+    
+    <div class="row">
+        <div class = 'col-md-12 col-12 mx-auto align-items-center'>
+                <div class="main_content">
+                    {{!-- left Sode COde --}}
+                    <form class="temp_form">
+                            <input type="text" autocomplete="off" id = "cityName" placeholder="Enter Your City Name.">
+                            <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div class="tempInformation">
+
+                    <div class="top_layer">
+                        <p id = 'day'>Thuesday</p>
+                        <p id = 'today_data'>13OCT</p>
+                    </div>
+
+                    <div class="main_layer">
+                        <p id = "top_div">Get Output Here...</p>
+
+                        <div class = "middle_layer data_hide">
+
+                            <p ><span id = "temp">0</span> <sup>o</sup> c</p>
+                            <p id = "temp_status"> <i class="fa fa-cloud" aria-hidden="true"></i></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+{{>footer}}
+
+<script src="js/main.js"></script>
+</body>
+</html>

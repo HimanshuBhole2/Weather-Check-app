@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    {{>header_Link}}
+    <title>Document</title>
+</head>
+<body>
+
+
+{{!-- Main Body HOME --}}
+
+<div class="conatiner-fluid main-menu">
+    <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                
+                {{>header}}
+                
+                </div>
+    </div>
+</div>
+
+<div class="container-fluid main-header">
+    
+    <div class="row">
+        <div class = 'col-md-10 col-12 mx-auto'>
+                <div class="row">
+                    {{!-- left Sode COde --}}
+                    <div class = "col-md-12 col-12 main-hader-left align-items-center">
+                        <img src="images/404.png" class="errimg" alt="">
+                        <p>welcome to the weather app</p>
+                        <h1>{{errMsg}}</h1>
+                        <a href="/"><button>Go Back</button></a>
+
+                    </div>
+
+                </div>
+
+
+                </div>
+        </div>
+    </div>
+
+
+
+    {{!-- footer --}}
+{{>footer}}
+
+    
+</body>
+</html>
