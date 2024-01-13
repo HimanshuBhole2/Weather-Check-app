@@ -1,5 +1,4 @@
 
-
 const submitBtn = document.getElementById('submitBtn');
 const cityName = document.getElementById('cityName');
 const top_div = document.getElementById('top_div');
@@ -18,7 +17,7 @@ const getInfo =async (event)=>{
     }
     else{
         try{
-            let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=dd77c3de734661c68c0f433781000043`
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
 
             const response = await fetch(url);
             const data =await response.json();
@@ -77,9 +76,3 @@ date.innerHTML =`${ddd} ${month}`;
 day1.innerHTML = day;
 
 submitBtn.addEventListener('click',getInfo);
-
-
-
-
-
-// `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&appid=dd77c3de734661c68c0f433781000043`
